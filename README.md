@@ -7,10 +7,10 @@
 
 |Links|
 |---|
-|[![Wiki](https://img.shields.io/badge/documents-blue?logo=Wikipedia)](https://github.com/SecureBankingAcceleratorToolkit/SecureBankingAcceleratorToolkit/wiki)|
-|[![Wiki](https://img.shields.io/badge/issues-red?logo=RetroArch)](https://github.com/SecureBankingAcceleratorToolkit/SecureBankingAcceleratorToolkit/issues)|
+|[![Wiki](https://img.shields.io/badge/documents-blue?logo=Wikipedia)](https://github.com/SecureBankingAccessToolkit/SecureBankingAccessToolkit/wiki)|
+|[![Wiki](https://img.shields.io/badge/issues-red?logo=RetroArch)](https://github.com/SecureBankingAccessToolkit/SecureBankingAccessToolkit/issues)|
 
-# Secure Banking Accelerator Toolkit
-**_This repository is part of the Secure Banking Accelerator Tool kit_**
+# Secure Banking Access Toolkit
+**_This repository is part of the Secure Banking Access Tool kit_**
 
 - Top level project - includes wiki and issues 

@@ -1,0 +1,19 @@
+# This action uses two steps
+# - 'Update epic issues with subtasks' step to update epic issues with the subtask issues
+# - 'Update epic subtask issues status' step is to update the status of the epic subtasks when the epic issue is labeled as `feature`
+# Auto close disabled
+name: Update epics
+on:
+  issues:
+    types: [edited, closed, reopened, labeled]
+jobs:
+  epics:
+    if: contains(github.event.issue.labels.*.name, 'subtask')
+    runs-on: ubuntu-latest
+    name: Update epic with new subtask or update the subtask state
+    steps:
+      - name: Sync Epic Issues
+        id: sync-epic
+        uses: kiali/kiali-epic-action@v1.0.1
+        with:
+          TOKEN: ${{ secrets.GH_TOKEN }}

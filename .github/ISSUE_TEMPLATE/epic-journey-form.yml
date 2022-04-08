@@ -20,8 +20,8 @@ body:
   - type: textarea
     id: story
     attributes:
-      label: Who, what, why
-      description: write a user story.
+      label: User Story
+      description: write the user story.
       placeholder: As the [product manager], I want to [do something] so that [comply with the achievement].
       value: |
         As the _[product manager]_, 
@@ -34,8 +34,7 @@ body:
     attributes:
       label: Product requirements
       description: Provide an explanation about the requirements if necessary
-      placeholder: Requirements...
-      value: |
+      placeholder: |
         - Client can initiate a payment...
         - The client can submit a payment...
         - The client can get the payment resource status...

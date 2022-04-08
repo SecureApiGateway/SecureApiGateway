@@ -6,55 +6,81 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+        Please fill out this epic form and click `create an epic` button at the bottom
+  - type: textarea
+    id: introducction
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Introduction
+      description: write a short description of what you hope to achieve with the epic.
+      placeholder: This feature will allow users to ...
+      value: |
+        This feature will allow users to ...
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: Who, what, why
+      description: write a user story.
+      placeholder: As the [product manager], I want to [do something] so that [comply with the achievement].
+      value: |
+        As the _[product manager]_, 
+        I want to _[do something]_ 
+        so that _[comply with the achievement]_.
+    validations:
+      required: true
+  - type: textarea
+    id: product-requirements
+    attributes:
+      label: Product requirements
+      description: Provide an explanation about the requirements if necessary
+      placeholder: Requirements...
+      value: |
+        - Client can initiate a payment...
+        - The client can submit a payment...
+        - The client can get the payment resource status...
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: design-requirements
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Design requirements
+      description: Provide an explanation about the design requirements if necessary
+      placeholder: Requirements...
+      value: |
+        - The intent needs to be stored in IDM ...
+        - The UI needs to be in pink color ...
     validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      required: false
   - type: textarea
-    id: logs
+    id: Scope
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Scope
+      description: The boundaries. The range of work will help the team to stay on track.
+      placeholder: Submit a payment resource process
+      value: |
+        - Submit a intent.
+        - Submit a resource to be processed.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Acceptance Criteria
+      description: Know when to define completion for the epic.
+      placeholder: Tell us who validate the completion of epic.
+      value: "Tell us the acceptance criteria..."
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Level of priority
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Low (Default)
+        - Normal
+        - High
+        - Critial
+    validations:
+      required: true

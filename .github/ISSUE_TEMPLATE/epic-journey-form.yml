@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: product-requirements
     attributes:
-      label: Product requirements
+      label: Product requirements (optional)
       description: Provide an explanation about the requirements if necessary
       placeholder: |
         - Client can initiate a payment...
@@ -43,10 +43,9 @@ body:
   - type: textarea
     id: design-requirements
     attributes:
-      label: Design requirements
+      label: Design requirements (optional)
       description: Provide an explanation about the design requirements if necessary
-      placeholder: Requirements...
-      value: |
+      placeholder: |
         - The intent needs to be stored in IDM ...
         - The UI needs to be in pink color ...
     validations:
@@ -56,8 +55,7 @@ body:
     attributes:
       label: Scope
       description: The boundaries. The range of work will help the team to stay on track.
-      placeholder: Submit a payment resource process
-      value: |
+      placeholder: |
         - Submit a intent.
         - Submit a resource to be processed.
     validations:
@@ -67,8 +65,7 @@ body:
     attributes:
       label: Acceptance Criteria
       description: Know when to define completion for the epic.
-      placeholder: Tell us who validate the completion of epic.
-      value: "Tell us the acceptance criteria..."
+      placeholder: Tell us the acceptance criteria...
     validations:
       required: true
   - type: dropdown

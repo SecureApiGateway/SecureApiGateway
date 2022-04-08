@@ -1,5 +1,5 @@
-name: SBAT Epic journey (test purposes)
-description: SBAT Epic form
+name: Epic form
+description: Epic form
 title: "[Epic]: "
 labels: ["epic"]
 body:
@@ -12,8 +12,7 @@ body:
     attributes:
       label: Introduction
       description: write a short description of what you hope to achieve with the epic.
-      placeholder: This feature will allow users to ...
-      value: |
+      placeholder: |
         This feature will allow users to ...
     validations:
       required: true

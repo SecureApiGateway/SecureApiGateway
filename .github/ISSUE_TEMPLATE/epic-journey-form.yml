@@ -1,7 +1,7 @@
 name: SBAT Epic journey (test purposes)
 description: SBAT Epic form
 title: "[Epic]: "
-labels: ["epic", "feature"]
+labels: ["epic"]
 body:
   - type: markdown
     attributes:
@@ -22,11 +22,8 @@ body:
     attributes:
       label: User Story
       description: write the user story.
-      placeholder: As the [product manager], I want to [do something] so that [comply with the achievement].
-      value: |
-        As the _[product manager]_, 
-        I want to _[do something]_ 
-        so that _[comply with the achievement]_.
+      placeholder: |
+        As the [product manager], I want to [do something] so that [comply with the achievement].
     validations:
       required: true
   - type: textarea
@@ -77,6 +74,6 @@ body:
         - Low (Default)
         - Normal
         - High
-        - Critial
+        - Critical
     validations:
       required: true

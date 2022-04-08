@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Forgerock community
+    url: https://community.forgerock.com/home
+    about: Collaborate, learn, and accelerate your use of the ForgeRock Identity Cloud.
+  - name: Forgerock learning
+    url: https://backstage.forgerock.com/university/cloud-learning
+    about: ForgeRock University Cloud Learning videos are all free to watch.

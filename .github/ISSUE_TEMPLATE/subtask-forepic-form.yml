@@ -1,0 +1,49 @@
+name: Subtask Report form
+description: Subtask Report form
+title: "[Subtask]: "
+labels: ["subtask"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Please fill out this subtask report form and click `Submit new issue` button at the bottom.
+        
+        > Remember to add a proper title related with this subtask.
+  - type: dropdown
+    id: sub-services
+    attributes:
+      label: Components
+      multiple: true
+      options:
+        - Identity-platform-initialiser
+        - RS
+        - UI
+        - RCS
+        - IG
+        - Generic library
+  - type: textarea
+    id: sub-description
+    attributes:
+      label: Describe de subtask
+      description: A clear and concise description of what the subtask is.
+      placeholder: |
+        A clear and concise description of what the subtask is.
+    validations:
+      required: true
+  - type: textarea
+    id: sub-expected
+    attributes:
+      label: Expected behaviour
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-additional
+    attributes:
+      label: Additional Context (optional)
+      description: Add any other context about the subtask here.
+  - type: textarea
+    id: sub-code-analysis
+    attributes:
+      label: Code solution approach (optional)
+      description: If you already investigated the code, please share your solution approach here.

@@ -1,5 +1,5 @@
 name: Epic form
-description: Epic form
+description: Epic form (you will need access to zenhub)
 title: "[Epic]: "
 labels: ["epic"]
 body:

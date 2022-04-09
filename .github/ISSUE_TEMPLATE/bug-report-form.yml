@@ -1,6 +1,6 @@
 name: Bug Report form
 description: Bug Report form
-title: "[Bug]: "
+title: "[Bug]: <title>"
 labels: ["bug"]
 body:
   - type: markdown

@@ -1,6 +1,6 @@
 name: Subtask Report form
 description: Subtask Report form
-title: "[Subtask]: "
+title: "[Subtask]: <title>"
 labels: ["subtask"]
 body:
   - type: markdown

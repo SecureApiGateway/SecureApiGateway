@@ -1,6 +1,6 @@
 name: Epic form
 description: Epic form (you will need access to zenhub)
-title: "[Epic]: "
+title: "[Epic]: <title>"
 labels: ["epic"]
 body:
   - type: markdown

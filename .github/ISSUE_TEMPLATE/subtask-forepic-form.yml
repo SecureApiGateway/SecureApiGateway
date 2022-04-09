@@ -31,14 +31,14 @@ body:
     validations:
       required: true
   - type: textarea
-    id: sub-expected
+    id: sub-criteria
     attributes:
-      label: Expected behaviour
-      description: A clear and concise description of what you expected to happen.
+      label: Acceptance criteria
+      description: Conditions that a subtask must satisfy to be accepted.
     validations:
       required: true
   - type: textarea
-    id: bug-additional
+    id: sub-additional
     attributes:
       label: Additional Context (optional)
       description: Add any other context about the subtask here.

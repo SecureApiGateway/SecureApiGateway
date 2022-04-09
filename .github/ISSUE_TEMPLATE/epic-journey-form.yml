@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out this epic form and click `create an epic` button at the bottom
+        > Please fill out this epic form and click `create an epic` button at the bottom
+        
+        > Remember to add a proper title related with this epic issue.
   - type: textarea
     id: introducction
     attributes:

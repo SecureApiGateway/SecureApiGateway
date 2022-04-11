@@ -20,7 +20,11 @@ body:
         - UI
         - RCS
         - IG
-        - Generic library
+        - Spring Config
+        - Identity Client library
+        - Model library
+        - Common library
+        - Dev Operations
   - type: textarea
     id: sub-description
     attributes:

@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Developers and Collaborators guidelines
+    url: https://github.com/SecureBankingAccessToolkit/SecureBankingAccessToolkit/wiki/Developers-guideline
+    about: Please read the developers and collaborators guideline before submit an issue.
   - name: Forgerock community
     url: https://community.forgerock.com/home
     about: Collaborate, learn, and accelerate your use of the ForgeRock Identity Cloud.

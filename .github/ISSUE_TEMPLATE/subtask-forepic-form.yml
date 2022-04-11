@@ -15,6 +15,7 @@ body:
       label: Components
       multiple: true
       options:
+        - All
         - Developer Environment
         - Identity-platform-initialiser
         - RS

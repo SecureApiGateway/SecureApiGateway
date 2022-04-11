@@ -1,5 +1,10 @@
 ## Description
 A few sentences describing the overall goals of the pull request's commits.
+- < change one >
+- < change two >
+- ...
+
+**Issue**: < Please add here the issue link >
 
 ## Impacted Areas in Application
 List general components of the application that this PR will affect:

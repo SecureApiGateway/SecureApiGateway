@@ -29,7 +29,7 @@ body:
         - Common library
         - Dev Operations
         - Functional Tests
-  - type: input
+  - type: textarea
     id: sub-story
     attributes:
       label: SubTask Story (optional)

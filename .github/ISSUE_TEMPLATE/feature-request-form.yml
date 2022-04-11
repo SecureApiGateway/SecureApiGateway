@@ -10,6 +10,13 @@ body:
         
         > Remember to add a proper title related with this feature requested.
   - type: textarea
+    id: f-story
+    attributes:
+      label: Feature Story (optional)
+      value: As the [developer], I want to [do something] so that [comply with the achievement].
+      placeholder: |
+        As the [developer], I want to [do something] so that [comply with the achievement].
+  - type: textarea
     id: f-problem
     attributes:
       label: Is your feature request related to a problem? Please describe.

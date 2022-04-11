@@ -13,7 +13,7 @@ body:
     id: sub-services
     attributes:
       label: Components
-      description: Multiple component selection
+      description: Which components are affected? Multiple component selection
       multiple: true
       options:
         - All
@@ -37,7 +37,7 @@ body:
       placeholder: |
         As the [developer], I want to [do something] so that [comply with the achievement].
   - type: textarea
-    id: sub-description
+    id: t-description
     attributes:
       label: Describe de task
       description: A clear and concise description of what the task is.
@@ -46,19 +46,19 @@ body:
     validations:
       required: true
   - type: textarea
-    id: sub-criteria
+    id: t-criteria
     attributes:
       label: Acceptance criteria
       description: Conditions that a subtask must satisfy to be accepted.
     validations:
       required: true
   - type: textarea
-    id: sub-additional
+    id: t-additional
     attributes:
       label: Additional Context (optional)
       description: Add any other context about the subtask here.
   - type: textarea
-    id: sub-code-analysis
+    id: t-code-analysis
     attributes:
       label: Code solution approach (optional)
       description: If you already investigated the code, please share your solution approach here.

@@ -1,4 +1,4 @@
-name: Epic form
+name: Epic form (reserved for authors, code owners and project manager)
 description: Epic form (you will need access to zenhub)
 title: "[Epic]: <title>"
 labels: ["epic"]

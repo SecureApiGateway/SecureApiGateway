@@ -1,4 +1,4 @@
-name: Subtask Report form
+name: Subtask Report form (reserved for authors, code owners and project manager)
 description: Subtask Report form (to link it with an Epic)
 title: "[Subtask]: <title>"
 labels: ["subtask"]

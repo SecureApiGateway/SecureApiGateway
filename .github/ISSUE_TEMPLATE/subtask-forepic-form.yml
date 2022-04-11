@@ -25,6 +25,7 @@ body:
         - Model library
         - Common library
         - Dev Operations
+        - Functional Tests
   - type: textarea
     id: sub-description
     attributes:

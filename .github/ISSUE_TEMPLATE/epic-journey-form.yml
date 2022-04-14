@@ -67,15 +67,3 @@ body:
       placeholder: Tell us the acceptance criteria...
     validations:
       required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: Level of priority
-      options:
-        - Low (Default)
-        - Normal
-        - High
-        - Critical
-    validations:
-      required: true

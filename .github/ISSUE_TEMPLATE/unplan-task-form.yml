@@ -1,0 +1,64 @@
+name: Unplanned task Report form
+description: Used to create issues found while working on a task
+title: "[Unplanned]: <title>"
+labels: ["unplanned"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Please fill out this unplanned task report form and click `Submit new issue` button at the bottom.
+        
+        > Remember to add a proper title related with this subtask.
+  - type: dropdown
+    id: un-services
+    attributes:
+      label: Components
+      description: Which components are affected? Multiple component selection
+      multiple: true
+      options:
+        - All
+        - Developer Environment
+        - Identity-platform-initialiser
+        - RS
+        - UI
+        - RCS
+        - IG
+        - Spring Config
+        - Identity Client library
+        - Model library
+        - Common library
+        - Dev Operations
+        - Functional Tests
+  - type: textarea
+    id: un-description
+    attributes:
+      label: Describe de issue
+      description: A clear and concise description of issue is.
+      placeholder: |
+        A clear and concise description of issue is.
+    validations:
+      required: true
+  - type: textarea
+    id: un-story
+    attributes:
+      label: User Story (optional)
+      value: As the [developer], I want to [do something] so that [comply with the achievement].
+      placeholder: |
+        As the [developer], I want to [do something] so that [comply with the achievement].
+  - type: textarea
+    id: un-criteria
+    attributes:
+      label: Acceptance criteria (optional)
+      description: Conditions that a subtask must satisfy to be accepted.
+    validations:
+      required: false
+  - type: textarea
+    id: un-additional
+    attributes:
+      label: Additional Context (optional)
+      description: Add any other context about the subtask here.
+  - type: textarea
+    id: un-code-analysis
+    attributes:
+      label: Code solution approach (optional)
+      description: If you already investigated the code, please share your solution approach here.

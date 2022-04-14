@@ -1,5 +1,5 @@
 name: Feature Request form
-description: Feature Request form
+description: To request a new feature
 title: "[Feature]: <title>"
 labels: ["feature", "enhancement"]
 body:

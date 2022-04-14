@@ -1,5 +1,5 @@
 name: Bug Report form
-description: Bug Report form
+description: To report a bug
 title: "[Bug]: <title>"
 labels: ["bug"]
 body:

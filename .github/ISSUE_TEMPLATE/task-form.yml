@@ -1,7 +1,7 @@
-name: Simple Task Report form
-description: Simple Task Report form
-title: "[simple-task]: <title>"
-labels: ["simple-task"]
+name: Task Report form
+description: To report an issue not related with an epic or an unplanned task
+title: "[issue]: <title>"
+labels: ["issue", "task"]
 body:
   - type: markdown
     attributes:

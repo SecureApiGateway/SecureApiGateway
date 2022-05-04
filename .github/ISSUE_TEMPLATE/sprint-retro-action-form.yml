@@ -12,7 +12,7 @@ body:
   - type: textarea
     id: ac-description
     attributes:
-      label: Describe de action
+      label: Describe the action
       description: A clear and concise description of action is.
       placeholder: |
         A clear and concise description of action is.

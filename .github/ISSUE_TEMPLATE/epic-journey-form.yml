@@ -10,7 +10,7 @@ body:
         
         > Remember to add a proper title related with this epic issue.
   - type: textarea
-    id: introducction
+    id: introduction
     attributes:
       label: Introduction
       description: write a short description of what you hope to achieve with the epic.

@@ -39,7 +39,7 @@ body:
   - type: textarea
     id: sub-description
     attributes:
-      label: Describe de subtask
+      label: Describe the subtask
       description: A clear and concise description of what the subtask is.
       placeholder: |
         A clear and concise description of what the subtask is.

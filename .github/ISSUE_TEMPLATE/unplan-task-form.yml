@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: un-description
     attributes:
-      label: Describe de issue
+      label: Describe the issue
       description: A clear and concise description of issue is.
       placeholder: |
         A clear and concise description of issue is.

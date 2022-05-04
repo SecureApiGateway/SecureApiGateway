@@ -1,0 +1,32 @@
+name: Sprint action Report form
+description: Used to create actions from sprint retrospectives
+title: "[Sprint-action]: <title>"
+labels: ["sprint-action"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Please fill out this unplanned task report form and click `Submit new issue` button at the bottom.
+        
+        > Remember to add a proper title related with this subtask.
+  - type: textarea
+    id: ac-description
+    attributes:
+      label: Describe de action
+      description: A clear and concise description of action is.
+      placeholder: |
+        A clear and concise description of action is.
+    validations:
+      required: true
+  - type: textarea
+    id: un-criteria
+    attributes:
+      label: Acceptance criteria (optional)
+      description: Conditions that a subtask must satisfy to be accepted.
+    validations:
+      required: false
+  - type: textarea
+    id: un-additional
+    attributes:
+      label: Additional Context (optional)
+      description: Add any other context about the subtask here.

@@ -1,6 +1,6 @@
 name: Task Report form
 description: To report an issue not related with an epic or an unplanned task
-title: "[issue]: <title>"
+title: "<title>"
 labels: ["issue", "task"]
 body:
   - type: markdown

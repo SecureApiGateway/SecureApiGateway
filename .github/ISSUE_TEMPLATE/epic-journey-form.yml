@@ -1,6 +1,6 @@
 name: Epic form
 description: To create an epic (reserved for authors, code owners and project manager, you will need access to zenhub)
-title: "[Epic]: <title>"
+title: "<title>"
 labels: ["epic"]
 body:
   - type: markdown

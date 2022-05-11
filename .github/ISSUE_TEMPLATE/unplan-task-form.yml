@@ -1,6 +1,6 @@
 name: Unplanned task Report form
 description: Used to create issues found while working on a task
-title: "[Unplanned]: <title>"
+title: "<title>"
 labels: ["unplanned"]
 body:
   - type: markdown

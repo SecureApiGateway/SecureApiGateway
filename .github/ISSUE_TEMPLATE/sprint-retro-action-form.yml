@@ -1,6 +1,6 @@
 name: Sprint action Report form
 description: Used to create actions from sprint retrospectives
-title: "[Sprint-action]: <title>"
+title: "<title>"
 labels: ["sprint-action"]
 body:
   - type: markdown

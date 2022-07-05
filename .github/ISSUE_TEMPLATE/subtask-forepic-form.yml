@@ -27,6 +27,7 @@ body:
         - Identity Client library
         - Model library
         - Common library
+        - Core library
         - Dev Operations
         - Functional Tests
   - type: textarea

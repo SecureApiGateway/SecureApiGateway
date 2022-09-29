@@ -397,6 +397,22 @@
        | payment-details | GET | GET /international-scheduled-payments/{InternationalScheduledPaymentId}/payment-details | Optional | payments | Client Credentials | Signed Response | No | NA | OBWritePaymentDetailsResponse1 |
        
        
+
+#### 11. International Standing Order Consents
+  
+  * **Overview**
+     * The International Standing Order Consent resource is used by a PISP to register an intent to initiate an International Standing Order.
+
+     * This resource description should be read in conjunction with a compatible Payment Initiation API Profile.
+
+  *  **Endpoints**
+     
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | international-standing-order-consents | POST | POST /international-standing-order-consents | Conditional | payments | Client Credentials | Signed Request Signed Response | Yes | OBWriteInternationalStandingOrderConsent6 | OBWriteInternationalStandingOrderConsentResponse7 |
+       | international-standing-order-consents | GET | GET /international-standing-order-consents/{ConsentId} | Mandatory (if resource POST implemented) | payments | Client Credentials | Signed Response | No | NA | OBWriteInternationalStandingOrderConsentResponse7 |
+       
+       
        
        
        

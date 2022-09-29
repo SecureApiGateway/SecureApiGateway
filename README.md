@@ -414,6 +414,23 @@
        
        
        
+#### 12. International Standing Orders
+  
+  * **Overview**
+     * The International Standing Orders resource is used by a PISP to initiate an International Standing Order.
+
+     * This resource description should be read in conjunction with a compatible Payment Initiation API Profile.
+
+  *  **Endpoints**
+       
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | international-standing-orders | POST | POST /international-standing-orders | Conditional | payments | Authorization Code | Signed Request Signed Response | Yes | OBWriteInternationalStandingOrder4 | OBWriteInternationalStandingOrderResponse7 |
+       | international-standing-orders | GET | GET /international-standing-orders/{InternationalStandingOrderPaymentId} | Mandatory (if resource POST implemented) | payments | Client Credentials | Signed Response | No | NA | OBWriteInternationalStandingOrderResponse7 |
+       | payment-details | GET | GET /international-standing-orders/{InternationalStandingOrderPaymentId}/payment-details | Optional | payments | Client Credentials | Signed Response | No | NA | OBWritePaymentDetailsResponse1 |
+       
+       
+       
        
        
        

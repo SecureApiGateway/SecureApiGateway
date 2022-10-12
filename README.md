@@ -431,6 +431,43 @@
        
        
        
+#### 13. File Payment Consents
+
+  * **Overview**
+     * The File Payment Consent resource is used by a PISP to register an intent to initiate a File Payment.
+
+     * This resource description should be read in conjunction with a compatible Payment Initiation API Profile.
+
+  *  **Endpoints**
+       
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | file-payment-consents | POST | POST /file-payment-consents | Conditional | payments | Client Credentials | Signed Request Signed Response | Yes | OBWriteFileConsent3 | OBWriteFileConsentResponse4 |
+       | file-payment-consents | POST | POST /file-payment-consents/{ConsentId}/file | Conditional | payments | Client Credentials | Signed Request Signed Response | Yes | File | NA |
+       | file-payment-consents | GET | GET /file-payment-consents/{ConsentId} | Mandatory (if resource POST implemented) | payments | Client Credentials | Signed Response | No | NA | OBWriteFileConsentResponse4 |
+       | file-payment-consents | GET | GET /file-payment-consents/{ConsentId}/file | Conditional | payments | Client Credentials | Signed Response | No | NA | File |
+       
+       
+       
+#### 14. File Payments
+
+  * **Overview**
+     * The File Payment resource is used by a PISP to initiate a File Payment.
+
+     * This resource description should be read in conjunction with a compatible Payment Initiation API Profile.
+
+  *  **Endpoints**
+       
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | file-payments | POST | POST /file-payments | Conditional | payments | Authorization Code | Signed Request Signed Response | Yes | OBWriteFile2 | OBWriteFileResponse3 |
+       | file-payments | GET | GET /file-payments/{FilePaymentId} | Mandatory (if resource POST implemented) | payments | Client Credentials | Signed Response | No | NA | OBWriteFileResponse3 |
+       | file-payments | GET | GET /file-payments/{FilePaymentId}/report-file | Conditional | payments | Client Credentials | Signed Response | No | NA | File |
+       | payment-details | GET | GET /file-payments/{FilePaymentId}/payment-details | Optional | payments | Client Credentials | Signed Response | No | NA | OBWritePaymentDetailsResponse1 |
+       
+       
+       
+       
        
        
        

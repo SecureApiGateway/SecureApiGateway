@@ -468,6 +468,46 @@
        
        
        
+### Variable Recurring Payments API
+
+#### 1. Domestic VRP consents
+
+  * **Overview**
+     * The Domestic VRP Consents resource is used by a TPP to register a consent to initiate one or more of domestic payments within the control parameters agreed with the PSU.
+
+     * This resource description should be read in conjunction with a compatible Variable Recurring Payments API Profile.
+     
+     * The PISP must call the end-point with the appropriate scope that they have been assigned. The ASPSP may use the scope to limit to functionality to sweeping or non-sweeping usage of the VRP. 
+
+  *  **Endpoints**
+
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | domestic-vrp-consents | POST | POST /domestic-vrp-consents | Mandatory | payments | Client Credentials | Signed Request Signed Response | Yes | OBDomesticVRPConsentRequest | OBDomesticVRPConsentResponse |
+       | domestic-vrp-consents | GET | GET /domestic-vrp-consents/{ConsentId} | Mandatory | payments | Client Credentials | Signed Response | No | NA | OBDomesticVRPConsentResponse |
+       | domestic-vrp-consents | DELETE | DELETE /domestic-vrp-consents/{ConsentId} | Mandatory | payments | Client Credentials | NA | No | NA | None |
+       | domestic-vrp-consents | POST | POST /domestic-vrp-consents/{ConsentId}/funds-confirmation | Mandatory | payments | Authorization Code | Signed Request Signed Response | No | OBVRPFundsConfirmationRequest | OBVRPFundsConfirmationResponse |
+       
+       
+       
+#### 2. Domestic VRPS
+
+  * **Overview**
+     * The Domestic VRPs resource is used by a TPP to initiate a domestic payment, under an authorised VRP Consent.
+
+     * This resource description should be read in conjunction with a compatible Payment Initiation API Profile.
+
+  *  **Endpoints**
+
+     * | Resource | HTTP Operation | Endpoint | Mandatory? | Scope | Grant Type | Message Signing | Idempotency Key | Request Object | Response Object |
+       | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+       | domestic-vrps | POST | POST /domestic-vrps | Conditional | payments | Authorization Code | Signed Request Signed Response | Yes | OBDomesticVRPRequest | OBDomesticVRPResponse |
+       | domestic-vrps | GET | GET /domestic-vrps/{DomesticVRPId} | Conditional | payments | Client Credentials | Signed Response | No | NA | OBDomesticVRPResponse |
+       | domestic-vrps | GET | GET /domestic-vrps/{DomesticVRPId}/payment-details | Optional | payments | Client Credentials | Signed Response | No | NA | OBDomesticVRPRequestDetailResponse |
+       
+       
+       
+       
        
        
        

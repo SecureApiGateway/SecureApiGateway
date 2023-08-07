@@ -505,10 +505,36 @@
        | domestic-vrps | GET | GET /domestic-vrps/{DomesticVRPId} | Conditional | payments | Client Credentials | Signed Response | No | NA | OBDomesticVRPResponse |
        | domestic-vrps | GET | GET /domestic-vrps/{DomesticVRPId}/payment-details | Optional | payments | Client Credentials | Signed Response | No | NA | OBDomesticVRPRequestDetailResponse |
        
-       
-       
-       
-       
+### Funds Confirmation API
+
+#### 1. Funds Confirmation Consents
+
+* **Overview**
+    * The Funds Confirmation Consent resource is used by an CBPII to register an intent to confirm funds.
+
+    * This resource description should be read in conjunction with a compatible Confirmation of Funds API Profile.
+
+*  **Endpoints**
+
+    * | Resource                   | HTTP Operation | Endpoint                                        | Mandatory? | Scope              | Grant Type         | Message Signing | Idempotency Key | Request Object              | Response Object                     |
+      |----------------------------|----------------|-------------------------------------------------|------------|--------------------|--------------------|-----------------|-----------------|-----------------------------|-------------------------------------|
+      | funds-confirmation-consent | POST           | POST /funds-confirmation-consents               | Mandatory  | fundsconfirmations | Client Credentials | No              | No              | OBFundsConfirmationConsent1 | OBFundsConfirmationConsentResponse1 |
+      | funds-confirmation-consent | GET            | GET /funds-confirmation-consents/{ConsentId}    | Mandatory  | fundsconfirmations | Client Credentials | No              | No              | NA                          | OBFundsConfirmationConsentResponse1 |
+      | funds-confirmation-consent | DELETE         | DELETE /funds-confirmation-consents/{ConsentId} | Mandatory  | fundsconfirmations | Client Credentials | No              | No              | NA                          | NA                                  |
+
+
+#### 2. Funds Confirmation
+
+* **Overview**
+    * The Funds Confirmation resource is used by an CBPII to request to confirm funds are available.
+
+    * This resource description should be read in conjunction with a compatible Confirmation of Funds API Profil
+
+*  **Endpoints**
+
+    * | Resource           | HTTP Operation | Endpoint                  | Mandatory? | Scope              | Grant Type         | Message Signing | Idempotency Key | Request Object       | Response Object              |
+      |--------------------|----------------|---------------------------|------------|--------------------|--------------------|-----------------|-----------------|----------------------|------------------------------|
+      | funds-confirmation | POST           | POST /funds-confirmations | Mandatory  | fundsconfirmations | Authorization Code | No              | No              | OBFundsConfirmation1 | OBFundsConfirmationResponse1 |
        
        
        
